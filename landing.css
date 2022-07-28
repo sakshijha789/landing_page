@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative; 
+    background: #0062be;
+    transition: 0.5s;
+ }
+ 
+ nav{
+     width: 84%;
+     margin: auto;
+     padding: 20px 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .logo{
+     width: 100px;
+     cursor: pointer;
+ }
+ nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+ }
+ nav ul li a{
+     text-decoration: none;
+     color: white;
+ }
+ nav ul li a:hover{
+     color: #ff4321;
+ }
+ .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #fff;
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.content .textBox h2 span
+{
+    font-size: 2em;
+}
+.content .textBox p
+{
+    color: #fff;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #111;
+    background: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 200px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.content .imgBox img
+{
+    max-width: 260px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li img{
+    max-width: 40px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+}
